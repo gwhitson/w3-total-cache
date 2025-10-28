@@ -38,6 +38,10 @@ class CdnEngine {
 				case 'azure':
 					$instances[ $instance_key ] = new CdnEngine_Azure( $config );
 					break;
+				
+				case 'azure_gcc_high':
+					$instances[ $instance_key ] = new CdnEngine_Azure_GCC_High( $config );
+					break;
 
 				case 'azuremi':
 					$instances[ $instance_key ] = new CdnEngine_Azure_MI( $config );
